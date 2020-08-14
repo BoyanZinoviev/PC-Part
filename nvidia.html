@@ -1,13 +1,106 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .navbar {
+      overflow: hidden;
+      background-color: rgb(11, 69, 136);
+    }
+    
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: rgb(0, 0, 0);
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    h1 {text-align: center;}
+    p {text-align: center;}
+    p {font-size:200%;}
+    
+    p2 {font-size:200%}
+    p3 {font-size:200%}
+    p4 {font-size:200%}
+    p4 {float: right;}
 h1 {text-align: center;}
 p {text-align: center;}
 p {font-size:200%}
 </style>
 </head>
 <body>
+    <div class="navbar">
+        <a href="index.html">Начало</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn">Продукти 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="motherboard.html">Дънни платки</a>
+            <a href="cpu.html">Процесори</a>
+            <a href="ram.html">Оперативна пемет</a>
+            <a href="psu.html">Захранвания</a>
+            <a href="gpu.html">Видео карти</a>
+            <a href="hard.html">Хард дискове</a>
+            <a href="SSD.html">SSD</a>
+        
+          </div>
+        </div> 
+        <a href="kontakti.html">Контакти</a>
+      </div>
 <h1 style="font-size:600%">PC Parts BG</h1>
 <p style="font-size:400%">MSI GeForce GTX 1660 SUPER AERO ITX</p>
 
